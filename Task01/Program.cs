@@ -10,7 +10,17 @@
 
 
 Console.Clear();
-Console.Write("Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int square = num * num;
-Console.WriteLine($"Квадрат числа {num} = {square}");
+Console.Write("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+int square = num2 * num2;
+if (num1 == square)
+{
+    Console.WriteLine($"Число {num2} является квадратом числа {num1}");
+}
+else
+{
+    Console.WriteLine($"Число {num2} не является квадратом числа {num1}");
+}
